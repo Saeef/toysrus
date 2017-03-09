@@ -1,0 +1,85 @@
+.shopping-bag .cols{float:left;padding:0 5px 0 0; border:#000 none 1px;}
+.shopping-bag .cols.thumb.desc.qty{width:25px;padding:0 15px 0 266px;}
+.shopping-bag .cols.sb-total{width:63px;}
+
+/* checkout cart columns adjustments */
+
+.shopping-bag .rows.head .cols.thumb {
+    padding-right: 5px;
+    width: 132px;
+}
+
+.shopping-bag .cols.desc {
+   width: 122px;
+   word-wrap: break-word;
+       width: 122px;
+    word-wrap: break-word;
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+.shopping-bag .cols.qty {
+   width: 30px;
+}
+
+.shopping-bag .rows .cols.thumb {
+    padding-right: 10px;
+    width: 132px;
+}
+
+.fix-quant .qty {
+   width: 54px;
+}
+
+.fix-quant .discount {
+   width: 75px !important;
+}
+
+.fix-quant .cena {
+   width: 80px !important;
+}
+
+.fix-quant-stchk .qty{
+   width: 54px;
+}
+
+.shopping-bag .rows.three-cols .cols.qty.discount.sb-total{
+   width: 252px !important;
+}
+
+.fix-quant-stchk .discount {
+   width: 74px;
+}
+
+.fix-quant-stchk .cena {
+   width: 80px;
+}
+
+.fix-quant-stchk th {
+   float: none !important;
+}
+
+.fix-quant-stchk .cena {
+    width: 80px !important;
+}
+
+.fix-quant-stchk .qty,.fix-quant-stchk .discount {
+   float: none !important;
+}
+
+.fix-quant-stchk .discount {
+   width: 75px !important;
+}
+
+.shopping-bag .shader-box .cols.qty.discount.sb-total {
+   width: 250px !important;
+}
+
+.fix-shader-box-one td {
+   width: 78px !important;
+}
+
+
+div.wrapper.mt20.mb10 {
+  text-align:center;
+}

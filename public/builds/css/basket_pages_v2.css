@@ -1,0 +1,43 @@
+/* season 2015 css file */
+/* backet override for all pages */
+/* joe hankin */
+
+
+/* input fields */
+
+@media screen and (min-width: 768px) {
+
+	/* start basket padding change */
+
+	/* sign in page (login) */
+	#login input[type=text], 
+	#login input[type=password], 
+
+	/* sign in page (create account) */
+	#newCustomerForm input[type="text"], 
+	#newCustomerForm input[type="password"], 
+
+	/* shipping page */
+	.shipping-address input[type=text],
+	.shipping-address input[type=password],
+
+	/* billing page */
+	.billing-address input[type=text],
+	.billing-address input[type=password],
+
+	/* billing page - loyalty */
+	input#loyaltyField { padding: 5px 5px!important; }
+
+	/* end basket padding change */
+
+
+
+	/* start basket default height change */
+
+	/* shipping page */
+	.form-fields input[type="text"],
+	.form-fields input[type="password"]{ height: auto; }
+
+	/* end basket default height change */
+	
+}

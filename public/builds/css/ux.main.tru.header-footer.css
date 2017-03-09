@@ -1,0 +1,117 @@
+#mini-cart-counter {
+   top: 7px;	
+}
+
+.header .bottom-section .wrapper .main-menu .sub-menu .sub-menu-container .dept-list .first-level .first-level-item a, 
+.header .bottom-section .wrapper .main-menu .sub-menu .sub-menu-container .category-link .first-level .first-level-item a {
+   font-weight: bold;
+}
+
+.header .bottom-section .wrapper .cart a.minicart-link img {
+   position: absolute;
+   bottom: 14px;
+   right: 54px;
+}
+
+.header .bottom-section .wrapper .main-menu .display.home,
+.header .bottom-section .wrapper .main-menu .sub-menu.home .sub-menu-container li .title {
+   font-size: 16px !important;
+}
+
+.header .bottom-section .wrapper .cart a label {
+   font-size: 12px;
+   color: #FFF;
+   margin: 5px 5px 0 0;
+   display: inline-block;
+}
+
+.header .bottom-section .wrapper .cart a .cart-quantity {
+   right: 56px !important;
+   left: auto !important;
+   display: inline-block;
+   width: 27px;
+   text-align: center;
+}
+
+.header .bottom-section .wrapper .cart a .cart-quantity.two-digits {
+   right: 57px !important;
+   left: auto !important;
+}
+
+.header .bottom-section .wrapper .search-bar input[type="text"] {
+   margin: 0;
+}
+
+.header .bottom-section .sub-menu-container .title {
+   padding-left: 15px !important;
+   font-size: 12px !important;
+}
+
+.footer .bottom-section .wrapper p{
+   width: 850px;
+   margin: 10px auto;
+   text-align: center;
+   white-space: nowrap;
+}
+
+/* fix */
+
+.wrp-secondary-menu {
+   margin-bottom: 5px;
+}
+
+.sub-menu.dark-shadowbox {
+   -webkit-box-shadow: 1px 0px 6px rgba(0,0,0,0.4);
+   -moz-box-shadow: 1px 0px 6px rgba(0,0,0,0.4);
+   box-shadow: 1px 0px 6px rgba(0,0,0,0.4);
+   background-image: none;
+}
+
+.header .upper-section .wrapper .menu {
+   margin-top: 18px;
+}
+.header .middle-section .wrapper .menu {
+   margin-top: 23px;
+}
+.header .middle-section .wrapper .menu li a {
+   font-size: 12px;
+}
+.header .dept-list {
+   padding-top: 3px;
+}
+
+.menu.floatright .show-tooltip a {
+   font-weight: bold;
+}
+
+.header .upper-section .wrapper .menu li:last-child {
+   border-right: 1px solid #c7c7c7;
+   padding: 0px 8px;
+}
+
+.header .upper-section .wrapper ul.menu > li:last-child {
+   border-right: none;
+   padding-right: 0px;
+}
+
+.header .upper-section .wrapper ul.menu li.show-tooltip {
+   border-right: none;
+   padding-right: 0px;
+}
+
+.footer .upper-section .email-sign-up input[type="text"] {
+   font-size: 26px;
+   margin-right: 10px;
+}
+
+.footer .upper-section .border-container {
+   padding: 14px 12px !important;
+}
+
+.footer .upper-section .select-country.border-container {
+   padding: 10px 12px 11px !important;
+}
+
+.footer .upper-section .email-sign-up p.error {
+   top: -23px !important;
+}

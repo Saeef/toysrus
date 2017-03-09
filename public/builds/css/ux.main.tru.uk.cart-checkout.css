@@ -1,0 +1,169 @@
+.billing-address .virtualTextBox select { 
+   max-width: 223px;
+}
+
+.payment-step .checkout-steps .billing-address .single-field {
+   width: auto;
+}
+
+.payment-step .checkout-steps .edit-add-bill {
+  width: 60px;
+  height: 30px;
+}
+
+.main-wrapper .payment-step .checkout-steps p.error {
+   width: 204px;
+}
+
+.address-container {
+   margin-right: 1px;
+}
+
+.address-container ul {
+    width: 205px !important;
+}
+
+/* Delivery Step && Create Account Checkout*/
+#content-2 .postal-lookup-container {
+   margin-top: 20px;
+}
+
+.main-wrapper .payment-step .checkout-steps label {
+   width: 128px !important;
+}
+
+.payment-step .checkout-steps .single-field label {
+   width: auto !important;
+}
+
+.payment-step .checkout-steps label.ship-to {
+   width: 120px !important;
+}
+
+/* Payment Step*/
+
+.payment-step .checkout-steps input.small-type-1 {
+   width: 99px !important;
+}
+
+.payment-step .checkout-steps .single-field.left-pad {
+    padding: 0 0 0 135px !important;
+}
+
+.payment-step .checkout-steps .single-field.left-pad.left-pad-0 {
+   padding: 0 !important;
+}
+
+.payment-step .checkout-steps .single-field.left-pad-0 input[type=checkbox]+input[type=hidden]+label {
+   width: 334px !important;
+}
+
+.shopping-bag .last {
+   max-height: 100%;
+}
+
+.payment-step .checkout-steps fieldset #ccForm_savedCC {
+   padding: 10px 0;
+}
+
+/* Receipt Step*/
+.shopping-bag .cols.order-id {
+   padding-right: 44px;
+   text-align: right;
+   width: 99px;
+}
+
+/* Payment Step*/
+
+.checkout-subtitles {
+   color: #FFFFFF;
+   font-size: 15px !important;
+   font-weight: normal;
+   background-color: #004EBC;
+   padding: 6px 5px;
+   margin-bottom: 12px;
+}
+
+.checkout-subcontainer {
+   background-color: #CCDDF0;
+   padding: 10px 4px 0;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   margin: 10px 0;
+}
+
+.gift-card-sub-container {
+   background-color: #CCDDF0 !important;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.gift-card-sub-container .rows .cols.label {
+   width: 245px !important;
+}
+
+.main-wrapper .payment-step .checkout-steps .checkout-subcontainer label {
+   font-weight: normal;
+}
+
+.main-wrapper .payment-step .checkout-steps .checkout-subcontainer p.error {
+   width: auto;
+   margin-left: 135px;
+}
+
+.payment-step .checkout-steps .single-field input[type="checkbox"] + label.payment-type-cb,
+.payment-step .checkout-steps .single-field input[type="radio"] + label.payment-type-cb {
+   vertical-align: middle;
+}
+
+.payment-step .checkout-steps .checkout-subcontainer input[type="text"].full-width {
+   width: 100% !important;
+}
+
+.payment-step .checkout-steps .payment-type {
+    width: auto !important;
+    border-bottom: none !important;
+}
+
+.payment-step .checkout-steps .checkout-subcontainer input[type="text"],
+.payment-step .checkout-steps .checkout-subcontainer input[type="password"] {
+   width: 215px !important;  
+}
+
+.payment-step .checkout-steps input.small-type-1[type="text"],
+.payment-step .checkout-steps input.small-type-1[type="password"] {
+    width: 99px !important;
+}
+
+.payment-step .checkout-steps .confirmation-checkbox {
+   max-width: 330px !important;
+   width: 330px !important;
+}
+
+.payment-step .checkout-steps .button-center {
+   text-align: center;
+}
+
+.payment-step .checkout-steps .button-center .submit-order-btn {
+   float: none;
+   display: inline-block;
+}
+
+.payment-step .checkout-steps .collapse-toggle,
+.payment-step .checkout-steps .expand-toggle {
+   color: #333333;
+   font-weight: bold;
+   display: block;
+   position: relative;
+   padding: 0 25px 0 3px;
+}
+
+
+.payment-step .checkout-steps .collapse-toggle span,
+.payment-step .checkout-steps .expand-toggle  span {
+   position: absolute;
+   top: 0;
+   right: 15px;
+}

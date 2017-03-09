@@ -1,0 +1,4 @@
+.payment-step .checkout-steps p#general_login_error.error {
+    margin: 10px 0 2px 35px;
+    position: relative;
+}
