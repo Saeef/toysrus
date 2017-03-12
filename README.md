@@ -1,7 +1,7 @@
 # toysrus  &nbsp; :hammer:
 - website url: https://www.:japanese_goblin::japanese_goblin::japanese_goblin:.co.uk
 - page target: https://www.:japanese_goblin::japanese_goblin::japanese_goblin:.co.uk/checkout/start-checkout
-- all javascript modifications: 
+- all **javascript** modifications:   &nbsp;:collision:
 
     - **on page load** remove entire shopping basket on the right hand side
     - **guest section** moved to the right, and changed heading to **New Customer**
