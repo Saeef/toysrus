@@ -15,7 +15,8 @@
     - render in mobile, desktop and tablet.
     
  <br/> <br/>  
-> better off not using a local server environment to implement variation locally as code will ulitmately be uploaded to the > site and it makes it difficult to load external files that way.   
+> better off not using a local server environment to implement variation locally as code will ulitmately be uploaded        
+to the site and it makes it difficult to load external files that way.        
     
     
   <hr />
