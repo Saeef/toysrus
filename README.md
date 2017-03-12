@@ -1,17 +1,17 @@
 # toysrus  &nbsp; :hammer:
-- website url: https://www.toysrus.co.uk
-- page target: https://www.toysrus.co.uk/checkout/start-checkout?_requestid=940975
+- website url: https://www.******.co.uk
+- page target: https://www.******.co.uk/checkout/start-checkout
 - all javascript modifications: 
 
     - **on page load** remove entire shopping basket on the right hand side
-    - guest section moved to the right, and changed heading to New Customer
-    - create Acount moved to the right underneath New Customer
-    - change Create Account color to blue and float CTA's left
-    - remove two top borders, one per each section mentioned above
-    - add a divider between Registered Customer and New Customer
-    - remove required field and move forgotten password on top of sign in
-    - extend top blue border across both sections
-    - add shopping basket from mobile to desktop
+    - **guest section** moved to the right, and changed heading to **New Customer**
+    - **create Acount** moved to the right underneath **New Customer**
+    - change **Create Account** color set to blue and float CTA's left
+    - remove two **top borders**, one per each section mentioned above
+    - add a **divider** between **Registered Customer** and **New Customer**
+    - remove **required field** and move **forgotten password** on top of **sign in**
+    - extend top **blue border** across both sections
+    - add **shopping basket** from mobile to desktop
     - render in mobile, desktop and tablet.
     
     
