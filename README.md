@@ -1,6 +1,6 @@
 # toysrus  &nbsp; :hammer:
-- website url: https://www.******.co.uk
-- page target: https://www.******.co.uk/checkout/start-checkout
+- website url: https://www.######.co.uk
+- page target: https://www.######.co.uk/checkout/start-checkout
 - all javascript modifications: 
 
     - **on page load** remove entire shopping basket on the right hand side
