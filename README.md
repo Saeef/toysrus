@@ -9,16 +9,16 @@ src:  js/scriptSL.js
 
 
 
-    - **on page load** remove entire shopping basket on the right hand side
-    - **guest section** moved to the right, and changed heading to **New Customer**
-    - **create Acount** moved to the right underneath **New Customer**
-    - change **Create Account** color set to blue and float CTA's left
-    - remove two **top borders**, one per each section mentioned above
-    - add a **divider** between **Registered Customer** and **New Customer**
-    - remove **required field** and move **forgotten password** on top of **sign in**
-    - extend top **blue border** across both sections
-    - add **shopping basket** from mobile to desktop
-    - render in mobile, desktop and tablet.
+- **on page load** remove entire shopping basket on the right hand side
+- **guest section** moved to the right, and changed heading to **New Customer**
+- **create Acount** moved to the right underneath **New Customer**
+- change **Create Account** color set to blue and float CTA's left
+- remove two **top borders**, one per each section mentioned above
+- add a **divider** between **Registered Customer** and **New Customer**
+- remove **required field** and move **forgotten password** on top of **sign in**
+- extend top **blue border** across both sections
+- add **shopping basket** from mobile to desktop
+- render in mobile, desktop and tablet.
     
  <br/> <br/>  
 > better off not using a local server environment to implement variation locally as code will ulitmately be uploaded to the site and it makes it difficult to load external files that way.                 
