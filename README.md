@@ -23,7 +23,7 @@
    <br />
   
   <kbd>pre-variation</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/preVariation.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](images/screenShots/preVariation.png?raw=true "mobile" target="_blank")
   
   
   <br />
@@ -52,5 +52,5 @@
    <br />
   
   <kbd>variation mobile2</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/variation2Mobile.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](images/screenShots/briefingImages/variationMobile2.png?raw=true "mobile" target="_blank")
 
