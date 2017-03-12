@@ -1,0 +1,52 @@
+/*=======
+ Header - TRU
+=========*/
+
+.header .upper-section .wrapper .menu li a:hover{
+   color: #ff7000;
+}
+
+
+.header .upper-section .wrapper .tooltip.top-arrow:after{
+   border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #0056B7;
+}
+
+.header .upper-section .wrapper .tooltip .tooltip-header,
+.header .upper-section .wrapper .tooltip .tooltip-content{
+   background-color: #FCFCFD;
+}
+
+.header .upper-section .wrapper .tooltip .tooltip-header{
+   background-image: url('/ux/themes/tru/common/img/bg_blue_lego-favorites.jpg');
+}
+
+.header .middle-section .wrapper .menu li a:hover{
+   /*color: #ff7000;*/
+   color: #004EBC;
+}
+
+.header .bottom-section .wrapper .main-menu .sub-menu .sub-menu-container li .first-level .first-level-item > a:hover{
+   background-color: #ff7000;
+}
+
+.sub-menu .sub-menu-container li .first-level .first-level-item > a.selected{
+   background-color: #ff7000;
+   color: #fff;
+}
+
+.header .bottom-section .wrapper .cart a:hover{
+   background-color: #ff7000;
+}
+
+/*======
+Footer
+========*/
+.footer .upper-section .selected-country{
+   background-image: url('/ux/themes/tru/common/img/arrow_blue_small.png');
+}
+
+/* if not declared in the main.base.css as button */
+.footer .upper-section .email-sign-up input[type="submit"]{
+   background-color: #014CC1;
+   -webkit-appearance: none;
+}

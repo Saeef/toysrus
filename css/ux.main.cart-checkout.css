@@ -1,0 +1,333 @@
+.error-message {
+   background-image: url("/ux/themes/common/img/error_sign.png");
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   color: #D30044;
+   padding: 5px 0 3px 30px;
+   margin: 0;
+   min-height: 21px;
+   font-weight: normal;
+}
+
+p.error {
+   font-weight: normal;
+}
+
+.payment-step .checkout-steps .single-field input[type="checkbox"],
+.payment-step .checkout-steps .single-field input[type="radio"] {
+   vertical-align: top !important;
+   padding: 0;
+   margin-top: 2px;
+}
+
+.payment-step .checkout-steps select {
+   margin: 0 !important;
+}
+
+.payment-step .checkout-steps select.medium {
+   width: 110px;
+}
+
+.main-wrapper .payment-step {
+   margin: 0 auto;
+   padding: 10px 20px;
+   width: 925px;
+}
+
+.main-wrapper .payment-step .checkout-steps {
+   margin: 0;
+   width: 358px;
+}
+
+.main-wrapper  .payment-step .rightCol {
+   width: 547px;
+}
+
+.main-wrapper .payment-step .checkout-steps .tabs a {
+   color: #333333;
+   display: inline-block;
+   cursor: pointer;
+}
+
+.main-wrapper .payment-step .checkout-steps .tabs .active a {
+   color: #FFFFFF;
+}
+
+.main-wrapper .payment-step .checkout-steps .commands {
+   border-bottom: none;
+   padding: 0;
+}
+
+.main-wrapper .payment-step .checkout-steps p.error {
+   min-height: 12px;
+}
+
+.payment-step .checkout-steps legend {
+   display: inline-block;
+   margin: 0 !important;
+   padding: 10px 0;
+}
+
+.payment-step .checkout-steps label {
+    width: 125px !important;
+}
+
+.payment-step .checkout-steps input[type=text],
+.payment-step .checkout-steps input[type=password],
+.payment-step .checkout-steps .virtualTextBox {
+   width: 223px !important;
+}
+
+.payment-step .checkout-steps .single-field label {
+    width: auto !important;
+}
+
+.payment-step .checkout-steps .single-field {
+   line-height: 14px;
+}
+
+.payment-step .checkout-steps .single-field input[type=checkbox]+label,
+.payment-step .checkout-steps .single-field input[type=radio]+label {
+   line-height: 14px;
+   vertical-align: bottom;
+}
+
+.payment-step .checkout-steps .single-field input[type=checkbox]+input[type=hidden]+label,
+.payment-step .checkout-steps .single-field input[type=radio]+input[type=hidden]+label {
+   line-height: 14px;
+   padding: 0 0 0 20px;
+   text-align: left;
+   margin: 0;
+   max-width: 334px;
+   vertical-align: bottom;
+}
+
+.payment-step .checkout-steps .single-field .checkbox-content input[type="checkbox"] + label,
+.payment-step .checkout-steps .single-field .checkbox-content input[type="radio"] + label {
+   line-height: 14px;
+   max-width: 208px;
+   margin-bottom: 10px;
+   vertical-align: bottom;
+}
+
+.main-wrapper .payment-step .checkout-steps label.as-billing-address {
+   width: 209px !important;
+}
+
+/* Start: Shopping Bag Section*/
+
+.shopping-bag .p2 {
+   line-height: 16px;
+}
+
+.shopping-bag .rows {
+   border-top: 1px solid #EBEBEB;
+   border-bottom: none !important;
+}
+
+.shopping-bag .rows.head {
+   border-top: none;
+}
+
+.shopping-bag .rows.head.last {
+   border-top: 1px solid #EBEBEB;
+}
+
+.shopping-bag .rows.head.last + .rows.last {
+   border-bottom: 1px solid #EBEBEB !important;
+   border-top: none;
+   margin-bottom: 10px;
+}
+
+.shopping-bag .rows.three-cols {
+   border-bottom: 1px solid #EBEBEB !important;
+   padding-bottom: 20px;
+}
+
+.shopping-bag .rows.three-cols.head {
+   border-top: none;
+   border-bottom: none !important;
+   margin-top: 10px;
+}
+
+.shopping-bag .rows.three-cols .desc{
+   width: 190px !important;
+}
+
+.shopping-bag .cols {
+   min-height: 14px;
+}
+
+.shopping-bag .last {
+   max-height: 16px;
+}
+
+.shopping-bag .cols span {
+   font-size: 11px;
+}
+
+.shopping-bag .cols.discount span {
+   margin: 0 0 10px;
+}
+
+.shopping-bag .shader-box {
+   border: none;
+}
+
+.shopping-bag .shader-box.last {
+   margin-bottom: 0 !important;
+}
+.shopping-bag .shader-box.last-message {
+   margin-bottom: 15px;
+   padding-top: 0;
+   background-color: transparent;
+}
+
+.shopping-bag .shader-box.last-message div {
+   font-weight: normal !important;
+}
+
+.shopping-bag .ship-to-method-container .sc-ship-to-label {
+   margin-top: 5px;
+}
+
+/* MultiShipping*/
+
+.form-fields {
+   padding-top: 6px !important;
+}
+
+.shopping-bag .ship-to-method-container {
+   margin-bottom: 10px;
+}
+.shopping-bag .ship-to-method-container .sc-ship-to-label {
+   font-size: 12px;
+}
+
+.form-fields {
+   margin: 0 !important;
+}
+
+/* Payment */
+
+.main-wrapper .payment-step .checkout-steps .saved-addrs .address {
+   margin-top: 0 !important;
+}
+
+/* Confirmation */
+
+#thankyou {
+   
+   font-weight: bold;
+   
+}
+
+.checkout-steps .ship-button {
+   width: 155px;
+   margin: 30px 0 8px 20px;
+}
+
+.checkout-steps .ty_verbiage {
+   padding:15px 0;
+}
+
+.checkout-steps .shiping_block {
+   line-height: 14px;
+   border-top-color: #D3D3D3;
+   border-top-style: solid;
+   border-top-width: 1px;
+   padding: 15px 0;
+}
+
+/* Gift Card */
+
+.gift-card-sub-container {
+   background-color: #EBEBEB;
+   padding: 8px 5px 8px;
+   margin-bottom: 10px;
+}
+
+.gift-card-sub-container p {
+   margin-bottom: 3px;
+}
+
+.gift-card-sub-container .rows {
+   padding: 8px 10px 0;
+   line-height: 14px;
+}
+
+.gift-card-sub-container .rows .cols {
+   width: 68px;
+   font-weight: normal;
+   float: left;
+   padding: 2px 0;
+}
+
+.gift-card-sub-container .rows .cols.label {
+   width: 250px;
+   font-weight: bold;
+   text-align: right;
+   padding-right: 15px;
+}
+
+.gift-card-sub-container .rows .cols.label a {
+   margin-right: 5px;
+}
+
+#selectedAddressForm{ max-width:200px; margin-left:4px; }
+
+.payment-step .checkout-steps .tabs {
+   padding-left: 8px;
+}
+
+/* misc */
+
+.cursor-default:hover {
+   
+   cursor: default;
+   
+}
+
+.cursor-pointer:hover {
+   
+   cursor: pointer;
+   
+}
+
+/* fix address form on step 1 and 2*/
+
+.payment-step .checkout-steps fieldset > div {
+   
+   width: 358px;
+   
+}
+
+
+
+#overlay-container.edit-address label.two-line-label {
+   
+   line-height: 15px;
+   
+}
+
+.errorWidthFix {
+   
+   width: 205px;
+   
+}
+
+
+#login fieldset > div {
+   
+   width: 362px
+   
+}
+
+
+/* fix subscribe instruction */
+
+span.fix-span-width {
+   
+   width: 354px
+   
+}

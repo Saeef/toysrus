@@ -1,0 +1,38 @@
+/*=====
+Color
+=======*/
+/*
+- Font & Background Colors TRU
+7   dark blue      rgb(15,77,188)
+8   red            rgb(211,0,68)
+9   orange         rgb(255,110,0)
+*/
+
+/* TRU colors - Just for Header and Footer */
+/* color 1 */
+.color-7 {
+  color: #004ebc;
+}
+
+.bg-color-7 {
+  background-color: #004ebc;
+}
+
+/* color 2 */
+.color-8 {
+  color: #d30044;
+}
+
+.bg-color-8 {
+  background-color: #d30044;
+}
+
+/* color 3 */
+.color-9 {
+  color: #ff7000;
+}
+
+.bg-color-9 {
+  background-color: #ff7000;
+}
+

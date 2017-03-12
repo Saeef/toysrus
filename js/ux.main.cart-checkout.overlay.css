@@ -1,0 +1,24 @@
+@charset "utf-8";
+#overlay-shadow{position:fixed;width:100%;height:100%;background:#000;opacity:0.7;top:0;left:0;z-index:998;}
+#overlay-container{width:750px;padding:20px;position:absolute;border:1px solid #000;box-shadow:0 0 5px #999;background:#fff;z-index:999;}
+#overlay-container .close{position:absolute;top:20px;right:20px;}
+
+/* Edit Address Overlay */
+#overlay-container.edit-address{width:580px;left:380px;top:100px;color:#666;font-size:14px;}
+#overlay-container.edit-address h4{font-size:18px;margin:0 0 15px;}
+#overlay-container.edit-address label{width:40%;height:35px;vertical-align:middle;color:#666;display:inline-block;line-height:35px;}
+#overlay-container.edit-address input[type=text],#overlay-container.edit-address input[type=password]{width:45%;height:35px;vertical-align:middle;border:1px solid #666;margin:0 0 10px;}
+#overlay-container.edit-address input[type=text].small1,#overlay-container.edit-address input[type=text].small2{width:12%;}
+#overlay-container.edit-address input[type=text].small3{width:14%;}
+#overlay-container.edit-address input[type=checkbox]{vertical-align:middle;position:relative;z-index:1;}
+#overlay-container.edit-address .virtualTextBox{display:inline-block;width:45%;height:35px;line-height:35px;margin:0 0 10px;vertical-align:middle;}
+#overlay-container.edit-address .virtualTextBox.no-label{margin:0 0 10px 41%;}
+#overlay-container.edit-address .virtualTextBox label{width:auto;padding:0 0 0 25px;margin:0 0 0 -25px;font-weight:normal;}
+#overlay-container.edit-address .commands{width:85%;margin:0 0 20px;text-align:right;font-size:12px;}
+#overlay-container.edit-address .commands button{float:right;}
+
+/* Gift Card Overlay */
+#overlay-container .gift-card-overlay{color:#333;line-height:18px;}
+#overlay-container .gift-card-overlay h4{color:#ff7000;font-size:24px;}
+#overlay-container .gift-card-overlay p{margin:15px 0;}
+#overlay-container .gift-card-overlay .cAlign{text-align:center;}
