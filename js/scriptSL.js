@@ -7,6 +7,8 @@
   var homeUrl = "www.toysrus.co.uk";
   //set testsite page target - stands for 'target page relative url'
   var tarRelUrl = "/checkout/start-checkout";
+  //number of items
+  var baskette = null;
   
 /*
 ----------------->
@@ -33,8 +35,13 @@
       //rightPan class
       style.innerHTML += ".basket {transition:all, .5s;}\n";
       style.innerHTML += ".mainToysArea { position:relative;  min-height:475px;}\n";
-      style.innerHTML += ".mt30 {margin:10px 0 0 0 !important;}";
-      style.innerHTML += "#rightside { position:absolute; top:23%; left:44%; width:2px; height:225px; background:#e8e8e8; }";
+      style.innerHTML += ".mt30 {margin:10px 0 0 0 !important;}\n";
+      style.innerHTML += "#rightside { position:absolute; top:23%; left:44%; width:2px; height:225px; background:#e8e8e8; }\n";
+      style.innerHTML += "#cartCtrl {background:rgb(0,85,182); cursor:pointer; color:#fff;position:absolute; background-image:url(images/arrow_white_down_small.png); background-repeat:no-repeat; width:134px; display:block; height:42px; padding:12px 0 0 8px; border-top-right-radius:5px; border-top-left-radius:3px; top:5%; right:5%;background-position:114px center; }\n";
+      style.innerHTML += "#cartCtrl label {color:#fff; font-size:12px; line-height:28px; cursor:pointer;}";
+      style.innerHTML += "#mini-cart-counter {color:#fff; position:absolute; top:12px; right:50px;}";
+      style.innerHTML += "#cartCtrl:hover {background-color: #ff7000;}";
+
 
       //append to head
       document.getElementsByTagName('head')[0].appendChild(style);
@@ -49,21 +56,56 @@
         
     },
 
+    cartusMini: function() {
+      var cartusrmini = document.createElement('div');
+      cartusrmini.id = "mini-cart";
+      cartusrmini.className = "minicart pol-mini";
+      cartusrmini.style.height = "auto";
+      cartusrmini.style.display = "block";
+
+
+      //handle,append
+      var mainContent = document.querySelector('.content.payment-step'); 
+      mainContent.appendChild(cartusrmini);
+
+
+
+      this.createCart();
+    },
+
+
+    //creates cart
+    createCart: function() {
+      //baskette
+      var bas = document.getElementsByClassName('miniColumn');
+      baskette = bas.length;
+      //is a number
+      if(isNaN(baskette)) {
+          console.warn('basket not loaded');
+          //avoid an error, set to zero
+          baskette = 0;
+      }
+
+      //creates div
+      var cartUs = document.createElement('div');
+      cartUs.className = 'cart';
+      cartUs.id = "cartCtrl";
+      cartUs.innerHTML = "<div class='minicart-iconArea'><a class='minicart-link strong' href='/cart' alt='My Basket' title='My Basket'><label>Basket</label><img style='padding-left:10px;' class='center' src='images/icon_cart_empty.png' alt='My Basket' title='My Basket'><span id='mini-cart-counter' class='cart-quantity cartIconItemCount'>" + baskette + "</span></a></div>";
+      var mainContent = document.querySelector('.content.payment-step'); 
+      mainContent.appendChild(cartUs);
+
+    },
+
     //drops divide
     createElem: function() {
         //new div
         var ele = document.createElement('div');
         ele.id = 'rightside';
         //add div
-        var mainContent = document.querySelector('.content.payment-step'); 
+        var mainContent = document.querySelector('.content.payment-step');
         mainContent.appendChild(ele);
         mainContent.style.width = '980px';
-        
-
-        
-
-
-
+        this.cartusMini();
 
     },
 
@@ -166,6 +208,9 @@
 
     }
 
+
+
+      
 
   };// testnameSL
 

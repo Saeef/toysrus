@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Test 01 - Full width sticky button on checkout",
+  "description": "#54215412",
+  "version": "1.2.5",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["app/jquery.js","app/core.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "app/icon.png",
+    "default_title": "Test 01 - Full width sticky button on checkout",
+    "default_popup": "app/extension.html"
+  },
+  "icons": {
+    "128": "app/img/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "cookies"
+  ],
+  "web_accessible_resources": [
+    "styles/_reset.less",
+    "styles/v1.less",
+    "styles/v2.less",
+    "styles/v3.less",
+    "v1.js",
+    "v2.js",
+    "v3.js",
+    "app/less.js",
+    "app/jquery.js"
+    
+    
+  ]
+}

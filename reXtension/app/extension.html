@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.js"></script>
+
+    
+
+  </head>
+  <body style="width: 320px;color:#000;font-family:Arial;font-size:14px;padding:0;margin:0px auto;outline:0px;background-color:#fff!important;">
+    <header>
+      <div class="tabtitle">
+        <img src="/app/img/logo.png" alt="RedEye" />
+      </div>
+
+      <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+      </div>
+      <div class="clearfix"></div>
+
+      <div id="title-exp"></div>
+      <div id="title-description"></div>
+      <div class="clearfix"></div>
+    </header>
+
+
+
+    <div id="wrapper-app-content">
+
+      
+
+      <div class="sub-options">
+        <div class="grid_4 variations">
+          <!-- <div class="title"><strong>Variation:</strong></div> -->
+          <ul>
+            <li data-variation="1">
+              1
+            </li>
+            <li data-variation="2">
+              2
+            </li>
+            <li data-variation="3">
+              3
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="grid_8 active-test">
+          <div class="title"><strong>Test:</strong></div>
+          <input type="text" name="folder-to-use" value="Still in Beta"></input>
+        </div> -->
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      
+
+      <div id="alljsrc" style="overflow-y:scroll;">
+        <code></code>
+      </div>
+
+      <div class="theactiveurl">
+        <span class="pulsate">&bull;</span>
+        <div class="cur_active">Experiment is only active on <b>current</b> url</div>
+        <div class="all_active">Experiment is active across <b>all website</b></div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="integrations">
+        <div class="google-classic" style="display: none;">Google Classic</div>
+        <div class="google-universal" style="display: none;">Universal Google Analytics</div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      
+      
+
+    </div>
+
+    <div id="more">
+        <div id="helper"><a href="https://gitlab.com/Loureiro800/redTag/" target="_blank">RedTag helper documentation</a></div>
+      </div>
+
+    <script type="text/javascript" src="generatejs.js"></script>
+
+
+
+    <style type="text/css">
+    .clearfix{
+      clear:both!important;
+    }
+    *{
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    #title-exp{
+      font-weight: bold;
+    padding-top: 10px;
+    line-height: 140%;
+        user-select: none;
+    -webkit-user-select: none;
+    }
+    #title-description{
+      margin-bottom: 8px;
+          color: #666;
+    line-height: 140%;
+        user-select: none;
+    -webkit-user-select: none;
+    }
+    #more{
+          background: #efefef;
+    padding: 12px;
+    border-top: 1px solid #bababa;
+        user-select: none;
+    -webkit-user-select: none;
+    }
+    #helper a{
+      text-decoration: none;
+    }
+    header{
+      padding: 12px 8px 0;
+      background: #FFF;
+      margin-bottom: 5px;
+    }
+    .sub-options{
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .sub-options .variations{
+      width: 99px;
+      float: left;
+    }
+    .sub-options .active-test{
+      width: 205px;
+      float: left;
+    }
+    .sub-options .active-test input{
+      width: 100%;
+      padding: 0;
+      margin-top: 3px;
+      border: 1px solid #fff;
+      border-bottom: 1px solid #ddd;
+      height: 25px;
+    }
+    .sub-options ul{
+      padding: 3px 0 0;
+      margin: 0;
+    }
+    #wrapper-app-content{
+      padding: 0 8px;
+    }
+    .sub-options ul li{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #DE4446;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .sub-options ul li:hover,
+    .sub-options ul li.active{
+      background: #DE4446;
+      border: 1px solid #de4446;
+      color: #fff;
+    }
+    .pulsate{
+      -webkit-animation-name: pulsate;
+      -webkit-animation-duration: 1.2s;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite
+    }
+    #bottomjsrc,
+    #forcejsrc{
+      margin-top: 10px;
+      width: 100%;
+      border: 1px solid #B9B9B9;
+      background-color: #fff;
+      padding: 5px;
+      height: 50px;
+      color: #A9A9A9!important;
+      word-break: break-all;
+    }
+    #bottomjsrc{
+      height: 75px;
+    }
+    #bottomjsrc span{
+      display: block;
+      color: #888;
+    }
+    #forcejsrc span.gray{
+      display: block;
+      color: #888;
+    }
+    @-webkit-keyframes pulsate {
+        0% {opacity: 0.2}
+        80% {opacity: 1}
+        100% {opacity: 0.2}
+     }
+    *{
+      font-size:12px!important;
+      color:#000;
+    }
+    #alljsrc::selection {
+      background-color:#de4446;
+      color:#fff;
+    }
+    .theactiveurl{
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .cur_active, .all_active{
+      display:none;
+    }
+    .theactiveurl span{
+      font-size: 30px!important;
+      color: green;
+      display: block;
+      float: left;
+      padding-top: 17px;
+      line-height: 0px;
+      width:17px;
+      color:#de4446!important;
+    }
+    .theactiveurl div{
+      float:left;
+      padding-top:10px;
+      color:#6F6F6F!important;
+    }
+    .theactiveurl div b{
+      color:#1D1D1D!important;
+    }
+    #alljsrc{
+      margin-top:10px;
+      border:1px solid #B9B9B9;
+      background-color:#fff;
+      padding:5px;
+      height:200px;
+      color:#A9A9A9!important;
+      word-break: break-all;
+    }
+    hr{
+      border:0px;
+      border-top:1px solid #999;
+    }
+    .clearfix{
+      clear:both;
+    }
+    .tabtitle b{
+      color:#de4446;
+    }
+    .tabtitle{
+      font-size: 15px;
+      font-weight: bold;
+      color: #333333;
+      line-height: 22px;
+      letter-spacing: 2px;
+      margin: 0 auto;
+      padding-bottom: 0px;
+      width: 170px;
+      float: left;
+      padding: 6px 6px 0 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .tabtitle img{
+      height: 30px;
+      width: 101px;
+    }
+    .onoffswitch {
+        float:right;
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #B7383A; border-radius: 20px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #de4446; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #ffffff; color: #999999;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+      display: block;
+      width: 24px;
+      margin: 4px;
+      background: #FFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 56px;
+      border: 1px solid #905152;
+      border-radius: 26px;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+    }
+    </style>
+
+  </body>
+</html>
