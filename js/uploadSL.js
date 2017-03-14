@@ -1,12 +1,5 @@
 (function() {
-  //clear console at runtime
-  console.clear();
-  //window object
-  var window = this.window;
-  //set testsite home page url
-  var homeUrl = "www.toysrus.co.uk";
-  //set testsite page target - stands for 'target page relative url'
-  var tarRelUrl = "/checkout/start-checkout";
+  
   //number of items
   var baskette = null;
   
@@ -208,7 +201,7 @@
         console.clear();
         debugger;
         //found right page  
-        console.info('Greetings from ' + tarRelUrl + ' page.');
+        console.info('Greetings from target page.');
         //remove rightPanel
         this.rightPanel();
         
@@ -231,31 +224,17 @@
       function runErrors() {
             //root local folder
             if(window.location.protocol == "file:") {
-                //get me 'start-checkout'
-                var tar = tarRelUrl.substr(10,tarRelUrl.length); 
-                if (window.location.href.includes(tar) != true) {
-                    throw "cannot find local home page";      
-                }
-                //run target page
-                else { //testing locally
-                    testNameSL.targetPage();
-                }    
                 
-            }//root local folder
+                    throw "wrong page";      
+            }
+            //run target page
+            else { //testing locally
+                    testNameSL.targetPage();
+            }    
+                
+         
 
-            //target\'s live root url
-            else if (window.location.hostname == homeUrl) {
-                    //get me '/checkout/start-checkout'
-                    if (window.location.pathname != tarRelUrl) {
-                         throw "not relative target url page";                  
-                    }
-                    //run target page
-                    else { 
-                         //testing live
-                         testNameSL.targetPage();
-                    }
-
-            }//root url 
+            
 
       }
 

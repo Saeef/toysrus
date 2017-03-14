@@ -28,6 +28,8 @@
     "styles/v1.less",
     "styles/v2.less",
     "styles/v3.less",
+    "includes/footer_js.js",
+    "includes/header_js.js",
     "v1.js",
     "v2.js",
     "v3.js",
