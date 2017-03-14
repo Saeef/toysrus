@@ -36,11 +36,17 @@
       style.innerHTML += ".basket {transition:all, .5s;}\n";
       style.innerHTML += ".mainToysArea { position:relative;  min-height:475px;}\n";
       style.innerHTML += ".mt30 {margin:10px 0 0 0 !important;}\n";
-      style.innerHTML += "#rightside { position:absolute; top:23%; left:44%; width:2px; height:225px; background:#e8e8e8; }\n";
+      style.innerHTML += "#rightside { position:absolute; top:23%; left:47%; width:2px; height:225px; background:#e8e8e8; }\n";
       style.innerHTML += "#cartCtrl {cursor:pointer; color:#333;position:absolute;font-size:.75rem;  display:block; padding:12px 0 0 8px;  top:8%; right:5%;}\n";
      
-      style.innerHTML += ".cartino {position:absolute; top:-14px; right:10px;\n}"
+      style.innerHTML += ".cartino {position:absolute; top:-14px; right:10px;}\n";
       style.innerHTML += "#cartCtrl a {line-height:24px; vertical-align:top;\n}";
+      style.innerHTML += ".toysheads {font-size:18px !important;line-height:26px;}\n";
+      style.innerHTML += ".cusrus {font-size:18px !important; line-height:26px;}\n";
+      style.innerHTML += ".payment-step .checkout-steps input[type=text] {margin:0 0 17px;font-size:12.5px !important;}";
+      style.innerHTML += ".payment-step .checkout-steps .tabs .tab {font-size:12.5px; padding:0 15px !important;}";
+      style.innerHTML += ".payment-step .checkout-steps .tabs .tab.active {padding:0 15px !important;}";
+      style.innerHTML += ".payment-step .checkout-steps {}";
 
 
       //append to head
@@ -56,9 +62,21 @@
         
     },
 
+    //final adjust
+    cssAdjustments:function() {
+      //register heading
+      var reghead = document.querySelector('.mt16.pb16 span');
+      //adding a class
+      reghead.classList.add('toysheads');
+      //new customer
+      var cus = document.querySelector('.mt10 span');
+      cus.classList.add('cusrus');
+
+
+
+    },
+
     
-
-
     //creates cart
     createCart: function() {
       //baskette
@@ -77,6 +95,7 @@
       cartUs.innerHTML = "<a href='/mobile/toys/cart' class='right relative cart-trigger color-2'>Back to Basket&nbsp; <span class='simple-cart-qty color-2 cartino'>" + baskette + "</span><img src='images/cart_icon.png' alt='Cart' height='23' width='34'></a>";
       var mainContent = document.querySelector('.content.payment-step'); 
       mainContent.appendChild(cartUs);
+      this.cssAdjustments();
 
     },
 
@@ -114,6 +133,8 @@
         //remove floatleft class and float right
         forgotten.classList.remove('floatleft');
         forgotten.style.float = 'right';
+        forgotten.textContent = "Forgotten your password?"
+        forgotten.style.color = "rgb(0, 86, 182)";
         //wrap up right side on a div
         this.createElem();  
 
@@ -132,9 +153,10 @@
          querySelector('.new-customer-checkout.gray-border-bottom.pb20'); 
          //move to new position
          create.style.position = 'absolute';
-         create.style.right = '2%';
-         create.style.top = '46%';
+         create.style.right = '5%';
+         create.style.top = '50%';
          create.style.border = 0;
+         create.style.width = '400px';
          //remove new customer small heading
          create.children[0].children[0].children[0].innerText = '';
          this.signIni();
@@ -159,9 +181,10 @@
          querySelector('.guest-checkout.gray-border-bottom.pb20'); 
          //new position
          guess.style.position = 'absolute';
-         guess.style.right = '10%';
+         guess.style.right = '5%';
          guess.style.top = '17.5%';
          guess.style.border = 0;
+         guess.style.width = '400px';
          //do blue button
          this.createAccount();
 
