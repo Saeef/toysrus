@@ -47,7 +47,7 @@ else {
 
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab.active {padding:0 15px !important;}";
       style.innerHTML += ".payment-step .checkout-steps {}";
-      style.innerHTML += "#newCustomButton {width:140px; min-height:35px!important; font-size:14px;}\n";
+      style.innerHTML += "#newCustomButton {width:150px; min-height:35px!important; font-size:14px; padding:12px 0;}\n";
       style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}\n";
       style.innerHTML += ".req-f {display:none;}\n";
       style.innerHTML += ".mt18 {margin-top:28px !important;}\n";
@@ -145,6 +145,16 @@ else {
       style.marginBottom = "2em";
       document.querySelector('span.cusrus').
       style.marginTop = "1em";
+      document.querySelectorAll('fieldset div label')[0].
+      textContent = "Email:";
+      document.querySelectorAll('fieldset div label')[1].
+      textContent = "Password:";
+      document.querySelectorAll('fieldset div label')[0].
+      style.fontSize = "13px";
+      document.querySelectorAll('fieldset div label')[1].
+      style.fontSize = "13px";
+      document.getElementById('newCustomButton').
+      style.fontWeight = "bold";
 
     },
 
