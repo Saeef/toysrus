@@ -38,17 +38,16 @@ console.log('wtf are you!');
       style.innerHTML += ".cusrus {font-size:18px !important; line-height:26px;}\n";
       style.innerHTML += ".payment-step .checkout-steps input[type=text] {margin:0 0 17px;font-size:12.5px !important;}";
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab {font-size:12.5px; padding:0 15px !important;}";
+
+
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab.active {padding:0 15px !important;}";
       style.innerHTML += ".payment-step .checkout-steps {}";
-      style.innerHTML += "#newCustomButton {width:140px; min-height:35px!important; font-size:14px;}\n"
-      style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}";
-      style.innerHTML += "input[type=text] {height:2.9rem;}\n";
-      style.innerHTML += "input[type=password] {height:2.9rem;}\n";
-      style.innerHTML += "div label {font-size:.975rem;}\n";
+      style.innerHTML += "#newCustomButton {width:140px; min-height:35px!important; font-size:14px;}\n";
+      style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}\n";
       style.innerHTML += ".req-f {display:none;}\n";
       style.innerHTML += ".mt18 {margin-top:28px !important;}\n";
       style.innerHTML += ".new-customer-checkout .mt18 {margin-top:10px !important;}\n";
-
+      style.innerHTML += "div label {font-size:.975rem;}\n";
 
 
       //append to head
@@ -81,23 +80,53 @@ console.log('wtf are you!');
         style.fontSize = ".85rem";
         document.querySelector('.title-big-text.header').
         style.fontSize = "2rem";
+
         //registered customer
         document.querySelector('h2.title-small-text.header').
         textContent = "Registered Customer";
         document.querySelector('h2.title-small-text.header').
         style.fontSize = "1.7rem";
         document.querySelector('dl.accordion dd.active a').
-        style.fontSize = "1.35rem"
+        style.fontSize = "1.35rem";
         document.querySelector('dl.accordion dd.active a').
         style.display = 'none';
         document.querySelector('p.border-bottom a').
         style.position = "absolute";
         document.querySelector('p.border-bottom a').
-        style.right = "1%";
+        style.right = "10px";
         document.querySelector('p.border-bottom a').
         style.top = "-154px";
         document.querySelector('p.border-bottom a').
         style.fontSize = "14px";
+        document.querySelector('.off-canvas-wrap .inner-wrap .row .row').
+        style.margin = "14px";
+        document.querySelector('input[type=text]').
+        style.height = "2.9rem";
+        document.querySelector('input[type=password]').
+        style.height = "2.9rem";
+
+        document.querySelectorAll('.title-small-text.header')[1].
+        textContent = "New Customer";
+
+        document.querySelectorAll('.title-small-text.header')[2].
+        textContent = "";
+
+        document.getElementById('newCustomButton').
+        textContent = "Create Account";
+        document.getElementById('newCustomButton').
+        style.backgroundColor = "#004ebc";
+
+        document.
+        querySelectorAll('.primary-button.button.bg-color-8.floatright.mt16')[1].
+        value = "Checkout as Guest";
+
+
+        
+      
+
+
+        
+     
         
 
 
@@ -252,19 +281,20 @@ console.log('wtf are you!');
     
             //live
             var homeUrl = "www.toysrus.co.uk";
-            var mobile = "/mobile/checkout/start-checkout";
-            var submob = mobile.substr(0,8);
+            var mobilo = "/mobile/checkout/start-checkout";
+            var submob = mobilo.substr(0,8);
             
             if(submob == "/mobile/") {
 
               this.mobile();
+              //this.rightPanel();
 
             } 
             //if mobile
 
             else {
-              //desktop
-              this.rightPanel();
+              //cant test mobile here
+              throw "wrong page live";
             }//else
 
  }
@@ -286,11 +316,31 @@ console.log('wtf are you!');
             //root local folder
             if(window.location.protocol == "file:") {
                 
-                    throw "wrong page";      
+                if (window.screen.width > 1080) {
+                        
+                        testNameSL.rightPanel();  
+
+                }
+                else if (window.screen.width <= 1080) {
+                        //testNameSL.mobile();
+                        //cant test mobile here
+                        throw "wrong page local";
+                }
+                        
             }
             //run target page
-            else { //testing locally
-                    testNameSL.targetPage();
+            else if (window.location.protocol == "https:") {
+
+                   
+            
+                    if(window.screen.width >1080) {
+                      testNameSl.rightPanel();
+                    }
+                    else if (window.screen.width <= 1080) {
+                        //mobile has its own url
+                        testNameSL.targetPage();
+                    }
+
             }    
                 
          
