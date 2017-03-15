@@ -30,7 +30,7 @@ src:  js/scriptSL.js
    
   
   <kbd>pre-variation</kbd>
-  ![pop-up screenshot](master/images/screenShots/preVariation.png?raw=true)
+  ![pop-up screenshot](/images/screenShots/preVariation.png?raw=true)
   
   
   <br />
