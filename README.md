@@ -36,28 +36,28 @@ src:  js/scriptSL.js
   <br />
   
   <kbd>control desktop</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/controlDesktop.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](/images/screenShots/briefingImages/controlDesktop.png?raw=true "mobile" target="_blank")
   
   
   <br />
   
   <kbd>control mobile</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/controlMobile.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](/images/screenShots/briefingImages/controlMobile.png?raw=true "mobile" target="_blank")
   
   
   <br />
   
   <kbd>variation desktop</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/variationDesktop.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](/images/screenShots/briefingImages/variationDesktop.png?raw=true "mobile" target="_blank")
   
   
   <br />
   
   <kbd>variation mobile</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/variationMobile.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](/images/screenShots/briefingImages/variationMobile.png?raw=true "mobile" target="_blank")
   
    <br />
   
   <kbd>variation mobile2</kbd>
-  ![pop-up screenshot](images/screenShots/briefingImages/variationMobile2.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](/images/screenShots/briefingImages/variationMobile2.png?raw=true "mobile" target="_blank")
 
