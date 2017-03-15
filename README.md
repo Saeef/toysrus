@@ -30,7 +30,7 @@ src:  js/scriptSL.js
    
   
   <kbd>pre-variation</kbd>
-  ![pop-up screenshot](https://raw.githubusercontent.com/stefan22/toysrus/master/images/screenShots/preVariation.png?raw=true "mobile" target="_blank")
+  ![pop-up screenshot](master/images/screenShots/preVariation.png?raw=true)
   
   
   <br />
