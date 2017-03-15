@@ -27,6 +27,8 @@ src:  js/scriptSL.js
   <hr />
   
    <br />
+    <kbd>js</kbd> :mag:
+ ![js2](images/screenShots/preVariation.png?raw=true "mobile" target="_blank")
   
   <kbd>pre-variation</kbd>
   ![pop-up screenshot](images/screenShots/preVariation.png?raw=true "mobile" target="_blank")
