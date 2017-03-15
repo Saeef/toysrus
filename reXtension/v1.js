@@ -1,13 +1,18 @@
+//only returns something if you are in checkout and cart isnt empty
 (function() {
-console.log('wtf are you!');  
-  //number of items
+
+      if(window.location.search == "") {
+
+    console.log('cart empty');
+
+}
+
+else {
+    console.log('go ahead');
+
+    //number of items
   var baskette = null;
 
-/*
------------------>
- ***testNameSL***
------------------>
-*/
   var testNameSL = {
 
     init: function() {
@@ -32,37 +37,28 @@ console.log('wtf are you!');
       style.innerHTML += "#rightside { position:absolute; top:23%; left:47%; width:2px; height:225px; background:#e8e8e8; }\n";
       style.innerHTML += "#cartCtrl {cursor:pointer; color:#333;position:absolute;font-size:.75rem;  display:block; padding:12px 0 0 8px;  top:2.3%; right:25%;}\n";
      
-      style.innerHTML += ".cartino {position:absolute; top:-14px; right:10px;}\n";
+      style.innerHTML += ".cartino {position:absolute; top:-18px; right:10px;}\n";
       style.innerHTML += "#cartCtrl a {line-height:24px; vertical-align:top;\n}";
       style.innerHTML += ".toysheads {font-size:18px !important;line-height:26px;}\n";
       style.innerHTML += ".cusrus {font-size:18px !important; line-height:26px;}\n";
       style.innerHTML += ".payment-step .checkout-steps input[type=text] {margin:0 0 17px;font-size:12.5px !important;}";
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab {font-size:12.5px; padding:0 15px !important;}";
+
+
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab.active {padding:0 15px !important;}";
       style.innerHTML += ".payment-step .checkout-steps {}";
-      style.innerHTML += "#newCustomButton {width:140px; min-height:35px!important; font-size:14px;}\n"
-      style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}";
-      style.innerHTML += "input[type=text] {height:2.9rem;}\n";
-      style.innerHTML += "input[type=password] {height:2.9rem;}\n";
-      style.innerHTML += "div label {font-size:.975rem;}\n";
+      style.innerHTML += "#newCustomButton {width:140px; min-height:35px!important; font-size:14px;}\n";
+      style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}\n";
       style.innerHTML += ".req-f {display:none;}\n";
       style.innerHTML += ".mt18 {margin-top:28px !important;}\n";
       style.innerHTML += ".new-customer-checkout .mt18 {margin-top:10px !important;}\n";
-
-
+      style.innerHTML += "div label {font-size:.975rem;}\n";
 
       //append to head
       document.getElementsByTagName('head')[0].appendChild(style);
         
 
     },  //mainCss
-    //ref page
-    homePage: function() {
-        console.clear();
-        //if it gets here, just park and call it out
-        console.info('Greetings from ' + homeUrl + ' page.');
-        
-    },
 
     //when mobile
     mobile: function() {
@@ -81,24 +77,57 @@ console.log('wtf are you!');
         style.fontSize = ".85rem";
         document.querySelector('.title-big-text.header').
         style.fontSize = "2rem";
+        document.querySelector('.title-big-text.header').
+        style.margin = "0 5px";
+
+        document.querySelectorAll('.button-small-text')[1].
+        style.margin = "0 5px";
+
+        document.querySelectorAll('.button-small-text')[2].
+        style.margin = "0 5px";
+
+
         //registered customer
         document.querySelector('h2.title-small-text.header').
         textContent = "Registered Customer";
         document.querySelector('h2.title-small-text.header').
         style.fontSize = "1.7rem";
         document.querySelector('dl.accordion dd.active a').
-        style.fontSize = "1.35rem"
+        style.fontSize = "1.35rem";
         document.querySelector('dl.accordion dd.active a').
         style.display = 'none';
         document.querySelector('p.border-bottom a').
         style.position = "absolute";
         document.querySelector('p.border-bottom a').
-        style.right = "1%";
+        style.right = "10px";
         document.querySelector('p.border-bottom a').
         style.top = "-154px";
         document.querySelector('p.border-bottom a').
         style.fontSize = "14px";
-        
+        document.querySelector('.off-canvas-wrap .inner-wrap .row .row').
+        style.margin = "14px";
+        document.querySelector('input[type=text]').
+        style.height = "2.9rem";
+        document.querySelector('input[type=password]').
+        style.height = "2.9rem";
+
+        document.querySelectorAll('.title-small-text.header')[1].
+        textContent = "New Customer";
+
+        document.querySelectorAll('.title-small-text.header')[2].
+        textContent = "";
+
+        document.getElementById('newCustomButton').
+        textContent = "Create Account";
+        document.getElementById('newCustomButton').
+        style.backgroundColor = "#004ebc";
+
+        document.
+        querySelectorAll('.primary-button.button.bg-color-8.floatright.mt16')[1].
+        value = "Checkout as Guest";
+
+        document.querySelectorAll('.row.collapse')[2].
+        style.margin = "5px";
 
 
     }, //mobile
@@ -176,7 +205,7 @@ console.log('wtf are you!');
         //remove floatleft class and float right
         forgotten.classList.remove('floatleft');
         forgotten.style.float = 'right';
-        forgotten.textContent = "Forgotten your password?"
+        forgotten.textContent = "Forgotten your password?";
         forgotten.style.color = "rgb(0, 86, 182)";
         //wrap up right side on a div
         this.createElem();  
@@ -243,76 +272,57 @@ console.log('wtf are you!');
         rightPan.classList.add('basket');
         //move to guess checkout
         this.guessCheck();
-
     },
 
     //target page
     targetPage: function() {
-
-    
             //live
             var homeUrl = "www.toysrus.co.uk";
-            var mobile = "/mobile/checkout/start-checkout";
-            var submob = mobile.substr(0,8);
-            
+            var mobilo = "/mobile/checkout/start-checkout";
+            var submob = mobilo.substr(0,8);   
             if(submob == "/mobile/") {
-
               this.mobile();
-
             } 
             //if mobile
-
             else {
-              //desktop
-              this.rightPanel();
+              //cant test mobile here
+              throw "wrong page live";
             }//else
 
  }
 
-
-
-      
-
   };// testnameSL
 
-
-
-   $(document).ready(function() {
-   
-      console.log('Test initialized - step1 of 3');
-      testNameSL.init();
-      debugger;
-      function runErrors() {
-            //root local folder
-            if(window.location.protocol == "file:") {
-                
-                    throw "wrong page";      
-            }
+  (function pollForjQuery() {
+        if (window.jQuery !== undefined) {
+            try { 
+              console.log('Test initialized - step1 of 3');
+              testNameSL.init();
+              function runErrors() {
+              //root local folder
+              if(window.location.protocol == "file:") {               
+                if (window.screen.width > 1080) {                   
+                        testNameSL.rightPanel();  
+                }//if
+                else if (window.screen.width <= 1080) {                       
+                        throw "wrong page local";
+                }//else if                       
+            }//try
             //run target page
-            else { //testing locally
+        else if (window.location.protocol == "https:") {
+    
+                if(window.screen.width >1080) {
+                  testNameSL.rightPanel();
+                }
+                else if (window.screen.width <= 1080) {
+                    //mobile has its own url
                     testNameSL.targetPage();
-            }    
+                }
+
+        }//if    
                 
-         
-
-            
-
-      }
-
-/*
---------------------------------->
- try & catch
---------------------------------->
-*********************************
-* it\'s not a bug. I tested it *
-*********************************
-browsers add a red and yellow 
-line in source code when using 
-console.error and console.warn
----------------------------------
-
-*/
-      
+      }//pollForJQuery
+  
       try {       
               
         runErrors();
@@ -327,8 +337,29 @@ console.error and console.warn
       } //catch
 
 
-  });  //doc ready funct
+  } catch (err) {
+                console.log('TRY ERROR: '+ err);
+            }
+        } else {
+            setTimeout(pollForjQuery, 25);
+        }
+    })();
+
+
+
+
+
+    
+
+}//else
+
+
+
 
 
 
 })();
+
+
+
+
