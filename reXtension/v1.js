@@ -1,4 +1,3 @@
-//only returns something if you are in checkout and cart isnt empty
 (function() {
 
       if(window.location.search == "") {
@@ -47,7 +46,7 @@ else {
 
       style.innerHTML += ".payment-step .checkout-steps .tabs .tab.active {padding:0 15px !important;}";
       style.innerHTML += ".payment-step .checkout-steps {}";
-      style.innerHTML += "#newCustomButton {width:150px; min-height:35px!important; font-size:14px; padding:12px 0;}\n";
+      style.innerHTML += "#newCustomButton {width:180px; font-weight:700; min-height:35px!important; font-size:14px; padding:12px 0;}\n";
       style.innerHTML += ".off-canvas-wrap .inner-wrap .row .row {margin: 0 .1em;}\n";
       style.innerHTML += ".req-f {display:none;}\n";
       style.innerHTML += ".mt18 {margin-top:28px !important;}\n";
@@ -148,7 +147,8 @@ else {
       document.querySelectorAll('fieldset div label')[0].
       textContent = "Email:";
       document.querySelectorAll('fieldset div label')[1].
-      textContent = "Password:";
+      innerHTML = "Password:<span style='color:#0056b6;'>(Details)</span>";
+      
       document.querySelectorAll('fieldset div label')[0].
       style.fontSize = "13px";
       document.querySelectorAll('fieldset div label')[1].
@@ -206,6 +206,7 @@ else {
         //checkout heading bottom border
         var sign = document.querySelector('ul.tabs');
         sign.style.width = '980px';
+        sign.style.paddingLeft = '0px';
         //get rid off required
         var req = document.
         querySelector('.required-msg.color-4.text-align-right');
@@ -369,7 +370,5 @@ else {
 
 
 })();
-
-
 
 
